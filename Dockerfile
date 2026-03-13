@@ -11,7 +11,7 @@ RUN pnpm install --frozen-lockfile
 
 COPY . .
 
-RUN pnpm build
+RUN NODE_OPTIONS="--max-old-space-size=8192" pnpm build
 
 # Production stage
 FROM node:22-alpine

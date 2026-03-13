@@ -2,7 +2,7 @@
   "name": "xmplus-docs",
   "scripts": {
     "dev": "nuxt dev --extends docus",
-    "build": "nuxt --max-old-space-size=8192 node_modules/nuxt/bin/nuxt.mjs build --extends docus"
+    "build": "nuxt build --extends docus"
   },
   "dependencies": {
     "@nuxt/eslint": "1.15.1",
